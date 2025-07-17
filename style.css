@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+#form-container {
+  max-width: 600px;
+  background: #fff;
+  padding: 25px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
