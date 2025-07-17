@@ -69,7 +69,7 @@ document.getElementById("submitBtn").addEventListener("click", async () => {
   reader.onload = function () {
     const base64 = reader.result.split(',')[1];
 
-    fetch("YOUR_WEB_APP_URL", { // Replace with Google Apps Script URL
+    fetch("https://script.google.com/macros/s/AKfycbwXwMNlG8GYFXnW_U4WsrUEIVjlC14f5FlllVyd36lkCsJ2CVc_eyekTgW4gIhLRy_7/exec", { // Replace with Google Apps Script URL
       method: "POST",
       body: JSON.stringify({
         pdfBase64: base64,
@@ -90,4 +90,10 @@ document.getElementById("submitBtn").addEventListener("click", async () => {
   reader.readAsDataURL(pdfBlob);
 
   document.body.removeChild(tempDiv);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const today = new Date().toISOString().split("T")[0];
+  document.getElementById("athleteDate").value = today;
+  document.getElementById("parentDate").value = today;
 });
