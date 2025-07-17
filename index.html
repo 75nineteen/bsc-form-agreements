@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Athlete Code of Conduct</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="form-container">
+    <h2>Athlete Code of Conduct</h2>
+    <p>The purpose of this code is to establish consistent expectations. By signing, I agree to the following:</p>
+    <ul>
+      <li>I will respect and show courtesy to my teammates and coaches at all times.</li>
+      <li>I will demonstrate good sportsmanship at practices and meets.</li>
+      <li>I will set a good example of behavior and work ethic for younger teammates.</li>
+      <li>I will be respectful of feelings and personal space; inappropriate behavior will result in consequences.</li>
+      <li>I will attend all team meetings and training unless excused by a coach.</li>
+      <li>I will show respect for all facilities and property used during club activities.</li>
+      <li>I will refrain from foul language, violence, dishonest, offensive, or illegal behavior.</li>
+      <li>If I disagree with an official’s call, I will consult my coach rather than the official.</li>
+      <li>I will obey all USA Swimming rules and codes of conduct.</li>
+      <li>I understand that violations may result in disciplinary action.</li>
+    </ul>
+
+    <form id="signatureForm">
+      <label>Athlete Name: <input type="text" name="athleteName" required></label><br>
+      <label>Date: <input type="date" name="athleteDate" required></label><br>
+      <p>Signature:</p>
+      <canvas id="signature-pad" width="400" height="150" style="border:1px solid #000;"></canvas><br>
+      <button type="button" id="clear">Clear Signature</button>
+
+      <hr>
+
+      <label>Parent Name: <input type="text" name="parentName" required></label><br>
+      <label>Date: <input type="date" name="parentDate" required></label><br>
+
+      <button type="button" id="submitBtn">Submit</button>
+    </form>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
