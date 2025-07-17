@@ -25,7 +25,7 @@
 
     <form id="signatureForm">
       <label>Athlete Name: <input type="text" name="athleteName" required></label><br>
-      <label>Date: <input type="date" name="athleteDate" required></label><br>
+      <label>Date: <input type="date" id="athleteDate" name="athleteDate" required></label><br>
       <p>Signature:</p>
       <canvas id="signature-pad" width="400" height="150" style="border:1px solid #000;"></canvas><br>
       <button type="button" id="clear">Clear Signature</button>
@@ -33,7 +33,7 @@
       <hr>
 
       <label>Parent Name: <input type="text" name="parentName" required></label><br>
-      <label>Date: <input type="date" name="parentDate" required></label><br>
+      <label>Date: <input type="date" id="parentDate" name="parentDate" required></label><br>
 
       <button type="button" id="submitBtn">Submit</button>
     </form>
